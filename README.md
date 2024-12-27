@@ -3,9 +3,8 @@
 ![My Image](wall.png)
 
 
-### 1. Problem Identification
+### Problem Identification
 
-#### 1.1. Problem Statement
 
 Most visits to the emergency department (ED) conclude with the patient being discharged, yet these departments stand out as the primary gateway for hospital admissions. When patients arrive at the ED, they undergo a critical sorting process known as "triage," which determines the urgency of their medical needs. This essential task is usually carried out by a skilled member of the nursing staff who assesses various factors, including the patient's demographic information, their principal complaint, and vital signs. After this initial evaluation, the patient is seen by a medical provider who formulates an initial care plan tailored to their specific situation. Based on this assessment, the provider ultimately makes a recommendation regarding the patient’s next steps, which in this study focuses on whether the patient should be admitted to the hospital or discharged to continue their recovery elsewhere.
 
@@ -27,7 +26,7 @@ Predictive models and accurate assessments are thus critical for maintaining the
 
 The main goal for this project is to predict hospital admissions at the time of ED triage by using patient demographics and information gathered during triage.
 
-#### 1.2. Dataset Description
+#### Dataset Description
 
 The dataset includes all adult emergency department visits from March 2014 to July 2017 at one academic and two community emergency rooms that resulted in either admission or discharge. A total of 972 variables were collected for each patient visit. In this study, we only consider the demographic information and information gathered during the triage:
 
@@ -63,4 +62,8 @@ The dataset includes all adult emergency department visits from March 2014 to Ju
 - ``n_surgeries``: number of surgeries and procedures within the past year
 
 The dataset is available at: [Admission Prediction Dataset](https://github.com/yaleemmlc/admissionprediction/tree/master/Results)
+
+### Problem Cleaning 
+
+There is a considerable amount of triage data missing in this dataset, which poses a challenge for accurate analysis and prediction. To address this issue, we employed the K-Nearest Neighbors Imputer (KNNImputer) technique to substitute the missing values. This method involves replacing the missing values with the mean values of the 10 nearest neighbors. By leveraging the KNNImputer, we ensure that the imputed values are based on actual patient data, thus maintaining the integrity and variability of the dataset. This approach not only helps in preserving the overall data distribution but also enhances the robustness of our subsequent analyses and predictive models. The use of the KNNImputer allows us to mitigate the impact of missing data, providing a more complete and reliable dataset for our study.
 
