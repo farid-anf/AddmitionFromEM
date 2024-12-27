@@ -97,6 +97,8 @@ We provide a comparison of performance metrics for different classification mode
 2. **Precision**:
    - The DNN achieves the highest precision at 0.6923, indicating it is the best at correctly identifying positive instances among those predicted as positive.
    - The RandomForestClassifier has the lowest precision at 0.6627.
+  
+     ![Example Image](output-figures/per.png)
    
 3. **Recall**:
    - The XGBClassifier has the highest recall at 0.4621, meaning it is the best at identifying all actual positive instances.
@@ -105,6 +107,8 @@ We provide a comparison of performance metrics for different classification mode
 4. **F1 Score**:
    - The XGBClassifier has the highest F1 Score at 0.5481, suggesting it has the best balance between precision and recall.
    - Logistic Regression has the lowest F1 Score at 0.5221.
+
+![Example Image](output-figures/auc.png)
 
 5. **AUC-ROC**:
    - The Ensemble Model (Voting Classifier) has the highest AUC-ROC at 0.8543, indicating the best overall ability to distinguish between positive and negative classes.
