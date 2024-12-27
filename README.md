@@ -87,6 +87,8 @@ We provide a comparison of performance metrics for different classification mode
 
 #### Key Observations:
 
+![Example Image](output-figures/acu.png)
+
 1. **Accuracy**:
    - The Ensemble Model (Voting Classifier) has the highest accuracy at 0.8213.
    - The Deep Neural Network (DNN) closely follows with an accuracy of 0.8208.
