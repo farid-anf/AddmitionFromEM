@@ -26,3 +26,41 @@ If we cannot accurately predict the need for hospital admission versus discharge
 Predictive models and accurate assessments are thus critical for maintaining the efficiency and effectiveness of emergency care, ensuring that patients receive appropriate treatment and resources are used optimally.
 
 The main goal for this project is to predict hospital admissions at the time of ED triage by using patient demographics and information gathered during triage.
+
+#### 1.2. Dataset Description
+
+The dataset includes all adult emergency department visits from March 2014 to July 2017 at one academic and two community emergency rooms that resulted in either admission or discharge. A total of 972 variables were collected for each patient visit. In this study, we only consider the demographic information and information gathered during the triage:
+
+**Demographics:**
+- ``age``
+- ``gender``
+- ``ethnicity``
+- ``race``
+- ``language``
+- ``religion``
+- ``marital status``
+- ``employment status``
+- ``insurance status``
+
+**Triage and Hospital Usage:**
+- ``dep_name``: presenting hospital (recoded into A, B, C)
+- ``esi``: ESI level determined by triage nurse
+- ``disposition``: admission or discharge
+- ``arrivalmode``: ambulance, walk-in, car, etc.
+- ``arrivalmonth``: month of arrival (Jan-Dec)
+- ``arrivalday``: day of arrival (Mon-Sun)
+- ``arrivalhour_bin``: hour of arrival, binned to 4-hour timeframes (23-02, 03-06, etc.)
+- ``triage_vital_hr``: heart rate recorded at triage
+- ``triage_vital_sbp``: systolic blood pressure recorded at triage
+- ``triage_vital_dbp``: diastolic blood pressure recorded at triage
+- ``triage_vital_rr``: respiratory rate recorded at triage
+- ``triage_vital_o2``: O2 saturation recorded at triage
+- ``triage_vital_o2_device``: presence of supplementary O2 device at triage
+- ``triage_vital_temp``: temperature recorded at triage
+- ``n_edvisits``: number of ED visits within the past year
+- ``n_admissions``: number of in-patient admissions within the past year
+- ``previousdispo``: disposition of the patient's last visit to the ED
+- ``n_surgeries``: number of surgeries and procedures within the past year
+
+The dataset is available at: [Admission Prediction Dataset](https://github.com/yaleemmlc/admissionprediction/tree/master/Results)
+
