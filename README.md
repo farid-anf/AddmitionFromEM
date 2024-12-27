@@ -1,5 +1,7 @@
 
 ## Anticipating Hospital Admissions from the Emergency Department
+![Uploading image.png…]()
+
 
 ### 1. Problem Identification
 
