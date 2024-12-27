@@ -75,7 +75,7 @@ We also identify the outliers, and study and anlysis if they have a considerable
 
 To quantitatively verify these relationships, we performed chi-square hypothesis testing. This statistical test helps determine whether there is a significant association between categorical variables. By applying the chi-square test, we could identify which variables are statistically significant and contribute most to the outcomes of interest, such as patient admission or discharge decisions.
 
-![Example Image](outputs-figures/heat.png)
+![Example Image](output-figures/heat.png)
 
 These combined methods—imputation using KNNImputer, visual inspection with heat maps, and statistical validation through chi-square tests—provided a comprehensive approach to handling missing data and understanding the key factors influencing patient outcomes. This rigorous analytical process ensures that our findings are both reliable and actionable.
 
