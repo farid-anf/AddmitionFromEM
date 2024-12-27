@@ -77,3 +77,51 @@ To quantitatively verify these relationships, we performed chi-square hypothesis
 
 These combined methods—imputation using KNNImputer, visual inspection with heat maps, and statistical validation through chi-square tests—provided a comprehensive approach to handling missing data and understanding the key factors influencing patient outcomes. This rigorous analytical process ensures that our findings are both reliable and actionable.
 
+## **Pre-processing and Training Data Development**
+
+## **Summary:** ##
+
+We provide a comparison of performance metrics for different classification models used on the same dataset. The models compared include Logistic Regression, XGBClassifier, RandomForestClassifier, Deep Neural Network (DNN), and an Ensemble Model (Voting Classifier) of all the previous models. The metrics compared are Accuracy, Precision, Recall, F1 Score, and AUC-ROC.
+
+#### Key Observations:
+
+1. **Accuracy**:
+   - The Ensemble Model (Voting Classifier) has the highest accuracy at 0.8213.
+   - The Deep Neural Network (DNN) closely follows with an accuracy of 0.8208.
+   - Logistic Regression has the lowest accuracy at 0.8153.
+
+2. **Precision**:
+   - The DNN achieves the highest precision at 0.6923, indicating it is the best at correctly identifying positive instances among those predicted as positive.
+   - The RandomForestClassifier has the lowest precision at 0.6627.
+   
+3. **Recall**:
+   - The XGBClassifier has the highest recall at 0.4621, meaning it is the best at identifying all actual positive instances.
+   - Logistic Regression has the lowest recall at 0.4269, indicating it misses more actual positive instances compared to other models.
+
+4. **F1 Score**:
+   - The XGBClassifier has the highest F1 Score at 0.5481, suggesting it has the best balance between precision and recall.
+   - Logistic Regression has the lowest F1 Score at 0.5221.
+
+5. **AUC-ROC**:
+   - The Ensemble Model (Voting Classifier) has the highest AUC-ROC at 0.8543, indicating the best overall ability to distinguish between positive and negative classes.
+   - Logistic Regression has the lowest AUC-ROC at 0.6812, indicating the poorest performance in distinguishing between classes.
+
+### Conclusions:
+
+- **Ensemble Model (Voting Classifier)**:
+  - This model stands out with the highest AUC-ROC score (0.8543) and high accuracy (0.8213), making it the best overall performer in terms of distinguishing between classes and general prediction accuracy.
+
+- **Deep Neural Network (DNN)**:
+  - The DNN shows strong performance with the highest precision (0.6923) and near-top accuracy (0.8208), indicating it is very effective at correctly predicting positive instances among those it classifies as positive.
+
+- **XGBClassifier**:
+  - This model excels in recall (0.4621) and F1 Score (0.5481), making it particularly effective in identifying positive instances and balancing precision and recall.
+
+- **Logistic Regression**:
+  - While Logistic Regression has the lowest performance across most metrics, it still serves as a useful baseline model with reasonable accuracy (0.8153) and AUC-ROC (0.6812).
+
+- **RandomForestClassifier**:
+  - This model performs moderately well across all metrics but does not lead in any particular area. Its performance is solid but not exceptional compared to the other models.
+
+Overall, the Ensemble Model (Voting Classifier) provides the best overall performance, making it the preferred choice if one aims to maximize both accuracy and the ability to distinguish between classes. The DNN and XGBClassifier also show strong individual performance in precision and recall, respectively, and could be considered depending on the specific needs of precision or recall in a given application.
+
