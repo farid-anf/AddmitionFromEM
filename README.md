@@ -64,7 +64,9 @@ The dataset includes all adult emergency department visits from March 2014 to Ju
 The dataset is available at: [Admission Prediction Dataset](https://github.com/yaleemmlc/admissionprediction/tree/master/Results)
 
 ## **Data Cleaning and Explotary Data Analysis (EDA)**
-[Data wrangling notebook](notebooks/prediction_disposition.ipynb)
+
+[Data wrangling and EDA notebook](notebooks/prediction_disposition.ipynb)
+
 There is a considerable amount of triage data missing in this dataset, which poses a challenge for accurate analysis and prediction. To address this issue, we employed the K-Nearest Neighbors Imputer (KNNImputer) technique to substitute the missing values. This method involves replacing the missing values with the mean values of the 10 nearest neighbors. By leveraging the KNNImputer, we ensure that the imputed values are based on actual patient data, thus maintaining the integrity and variability of the dataset. This approach not only helps in preserving the overall data distribution but also enhances the robustness of our subsequent analyses and predictive models. The use of the KNNImputer allows us to mitigate the impact of missing data, providing a more complete and reliable dataset for our study.
 
 ### **Explotary Data Analysis (EDA)**
@@ -80,9 +82,9 @@ To quantitatively verify these relationships, we performed chi-square hypothesis
 These combined methods—imputation using KNNImputer, visual inspection with heat maps, and statistical validation through chi-square tests—provided a comprehensive approach to handling missing data and understanding the key factors influencing patient outcomes. This rigorous analytical process ensures that our findings are both reliable and actionable.
 
 ## **Pre-processing and Training Data Development**
-[Data wrangling notebook](notebooks/Pre-processingTrainingDataDevelopment.ipynb)
+[Pre-Processing and Modelling](notebooks/Pre-processingTrainingDataDevelopment.ipynb)
 
-## **Summary:** ##
+
 
 We provide a comparison of performance metrics for different classification models used on the same dataset. The models compared include Logistic Regression, XGBClassifier, RandomForestClassifier, Deep Neural Network (DNN), and an Ensemble Model (Voting Classifier) of all the previous models. The metrics compared are Accuracy, Precision, Recall, F1 Score, and AUC-ROC.
 
