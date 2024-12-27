@@ -63,11 +63,11 @@ The dataset includes all adult emergency department visits from March 2014 to Ju
 
 The dataset is available at: [Admission Prediction Dataset](https://github.com/yaleemmlc/admissionprediction/tree/master/Results)
 
-### Data Cleaning 
-
+## **Data Cleaning and Explotary Data Analysis (EDA)**
+[Data wrangling notebook](notebooks/prediction_disposition.ipynb)
 There is a considerable amount of triage data missing in this dataset, which poses a challenge for accurate analysis and prediction. To address this issue, we employed the K-Nearest Neighbors Imputer (KNNImputer) technique to substitute the missing values. This method involves replacing the missing values with the mean values of the 10 nearest neighbors. By leveraging the KNNImputer, we ensure that the imputed values are based on actual patient data, thus maintaining the integrity and variability of the dataset. This approach not only helps in preserving the overall data distribution but also enhances the robustness of our subsequent analyses and predictive models. The use of the KNNImputer allows us to mitigate the impact of missing data, providing a more complete and reliable dataset for our study.
 
-## **Explotary Data Analysis (EDA)**
+### **Explotary Data Analysis (EDA)**
 
 In addition to data imputation, we employed heat maps and several chi-square hypothesis tests to examine the relationships between various variables and identify which ones have the most significant impact. Heat maps enabled us to visually assess the correlations between different variables, providing an intuitive way to spot patterns and potential areas of interest.
 
@@ -80,6 +80,7 @@ To quantitatively verify these relationships, we performed chi-square hypothesis
 These combined methods—imputation using KNNImputer, visual inspection with heat maps, and statistical validation through chi-square tests—provided a comprehensive approach to handling missing data and understanding the key factors influencing patient outcomes. This rigorous analytical process ensures that our findings are both reliable and actionable.
 
 ## **Pre-processing and Training Data Development**
+[Data wrangling notebook](notebooks/Pre-processingTrainingDataDevelopment.ipynb)
 
 ## **Summary:** ##
 
