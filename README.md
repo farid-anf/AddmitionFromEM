@@ -81,6 +81,10 @@ To quantitatively verify these relationships, we performed chi-square hypothesis
 
 These combined methods—imputation using KNNImputer, visual inspection with heat maps, and statistical validation through chi-square tests—provided a comprehensive approach to handling missing data and understanding the key factors influencing patient outcomes. This rigorous analytical process ensures that our findings are both reliable and actionable.
 
+We also used XGboost and Random Forrest to see which features are important. 
+
+![Example Image](output-figures/features.png)
+
 ## **Pre-processing and Training Data Development**
 [Pre-Processing and Modelling](notebooks/Pre-processingTrainingDataDevelopment.ipynb)
 
