@@ -128,6 +128,7 @@ The performance of each model is evaluated using the following metrics:
    - **Worst**: Naive Bayes (0.784551)
    - Accuracy indicates the proportion of total predictions that are correct. The Ensemble model has the highest accuracy, followed closely by XGB and DNN.
  <img src="output-figures/ac.png" alt="image" width="400" height="300"/>
+ 
 2. **Precision Score**:
    - **Best**: Ridge (0.704475)
    - **Worst**: Naive Bayes (0.550113)
