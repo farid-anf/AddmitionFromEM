@@ -168,38 +168,3 @@ Overall, the Ensemble model offers the best trade-off between the various perfor
 
 
 
-**Key Observations:**
-1. **Accuracy:** The Ensemble model achieved the highest accuracy score (0.820742), closely followed by XGB (0.819844) and DNN (0.819002).
-   
-   <img src="output-figures/ac.png" alt="image" width="400" height="300"/>
-2. **Precision:** Ridge model showed the highest precision score (0.704475), indicating that when it predicted a disposition, it was correct 70.45% of the time.
-  
-    <img src="output-figures/Percision.png" alt="image" width="400" height="300"/>
-3. **Recall:** XGB achieved the highest recall score (0.459982), which means it was able to identify 45.99% of the actual disposition cases.
-  
-    <img src="output-figures/recall.png" alt="image" width="400" height="300"/>
-4. **F1 Score:** The DNN model had the highest F1 score (0.551896), indicating a good balance between precision and recall.
-
-    <img src="output-figures/F1.png" alt="image" width="400" height="300"/>
-5. **ROC AUC Score:** The Ensemble model had the highest ROC AUC score (0.854140), indicating its superior ability to distinguish between disposition and release classes.
-   
-    <img src="output-figures/Roc.png" alt="image" width="400" height="300"/>
-
-**Overall Best Model:** The Ensemble model, with the highest accuracy and ROC AUC scores, appears to be the most effective model for this task. However, the XGB and DNN models also performed well across most metrics.
-
-### Performance Metrics Table
-
-| Model              | Accuracy Score | Precision Score | Recall Score | F1 Score  | ROC AUC Score |
-|--------------------|----------------|-----------------|--------------|-----------|---------------|
-| Logistic Regression| 0.815383       | 0.671089        | 0.428822     | 0.523274  | 0.842728      |
-| XGB                | 0.819844       | 0.674034        | 0.459982     | 0.546807  | 0.853364      |
-| Naive Bayes        | 0.784551       | 0.550113        | 0.483894     | 0.514883  | 0.797722      |
-| Random Forest      | 0.815935       | 0.663608        | 0.448173     | 0.535018  | 0.842945      |
-| Ridge              | 0.810935       | 0.704475        | 0.344227     | 0.462475  | 0.649776      |
-| KNN                | 0.791513       | 0.577924        | 0.436188     | 0.497151  | 0.778599      |
-| DNN                | 0.819002       | 0.664881        | 0.471733     | 0.551896  | 0.852758      |
-| Ensemble           | 0.820742       | 0.682139        | 0.451915     | 0.543658  | 0.854140      |
-
-
-
-
