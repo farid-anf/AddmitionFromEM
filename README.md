@@ -116,13 +116,13 @@ The performance of each model is evaluated using the following metrics:
 2. **Precision:** Ridge model showed the highest precision score (0.704475), indicating that when it predicted a disposition, it was correct 70.45% of the time.
   
     <img src="output-figures/Percision.png" alt="image" width="400" height="300"/>
-3. **Recall:** XGB achieved the highest recall score (0.459982), which means it was able to identify 45.99% of the actual positive cases.
+3. **Recall:** XGB achieved the highest recall score (0.459982), which means it was able to identify 45.99% of the actual disposition cases.
   
     <img src="output-figures/recall.png" alt="image" width="400" height="300"/>
 4. **F1 Score:** The DNN model had the highest F1 score (0.551896), indicating a good balance between precision and recall.
 
     <img src="output-figures/F1.png" alt="image" width="400" height="300"/>
-5. **ROC AUC Score:** The Ensemble model had the highest ROC AUC score (0.854140), indicating its superior ability to distinguish between the positive and negative classes.
+5. **ROC AUC Score:** The Ensemble model had the highest ROC AUC score (0.854140), indicating its superior ability to distinguish between disposition and release classes.
    
     <img src="output-figures/Roc.png" alt="image" width="400" height="300"/>
 
