@@ -111,15 +111,20 @@ The performance of each model is evaluated using the following metrics:
 
 **Key Observations:**
 1. **Accuracy:** The Ensemble model achieved the highest accuracy score (0.820742), closely followed by XGB (0.819844) and DNN (0.819002).
-   <img src="output-figures/ac.png" alt="image" width="300" height="200"/>
-3. **Precision:** Ridge model showed the highest precision score (0.704475), indicating that when it predicted a disposition, it was correct 70.45% of the time.
-   ![Example Image](output-figures/Percision.png)
-4. **Recall:** XGB achieved the highest recall score (0.459982), which means it was able to identify 45.99% of the actual positive cases.
-   ![Example Image](output-figures/recall.png)
-5. **F1 Score:** The DNN model had the highest F1 score (0.551896), indicating a good balance between precision and recall.
-   ![Example Image](output-figures/F1.png)
-6. **ROC AUC Score:** The Ensemble model had the highest ROC AUC score (0.854140), indicating its superior ability to distinguish between the positive and negative classes.
-   ![Example Image](output-figures/Roc.png)
+   
+   <img src="output-figures/ac.png" alt="image" width="400" height="300"/>
+2. **Precision:** Ridge model showed the highest precision score (0.704475), indicating that when it predicted a disposition, it was correct 70.45% of the time.
+  
+    <img src="output-figures/Percision.png" alt="image" width="400" height="300"/>
+3. **Recall:** XGB achieved the highest recall score (0.459982), which means it was able to identify 45.99% of the actual positive cases.
+  
+    <img src="output-figures/recall.png" alt="image" width="400" height="300"/>
+4. **F1 Score:** The DNN model had the highest F1 score (0.551896), indicating a good balance between precision and recall.
+
+    <img src="output-figures/F1.png" alt="image" width="400" height="300"/>
+5. **ROC AUC Score:** The Ensemble model had the highest ROC AUC score (0.854140), indicating its superior ability to distinguish between the positive and negative classes.
+   
+    <img src="output-figures/Roc.png" alt="image" width="400" height="300"/>
 
 **Overall Best Model:** The Ensemble model, with the highest accuracy and ROC AUC scores, appears to be the most effective model for this task. However, the XGB and DNN models also performed well across most metrics.
 
