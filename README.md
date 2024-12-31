@@ -109,6 +109,65 @@ The performance of each model is evaluated using the following metrics:
 - **F1 score**, and
 - **ROC AUC score**.
 
+
+| Model                 | Accuracy Score | Precision Score | Recall Score | F1 Score  | ROC AUC Score |
+|-----------------------|----------------|-----------------|--------------|-----------|---------------|
+| Logistic Regression   | 0.815383       | 0.671089        | 0.428822     | 0.523274  | 0.842728      |
+| XGB                   | 0.819844       | 0.674034        | 0.459982     | 0.546807  | 0.853364      |
+| Naive Bayes           | 0.784551       | 0.550113        | 0.483894     | 0.514883  | 0.797722      |
+| Random Forest         | 0.815935       | 0.663608        | 0.448173     | 0.535018  | 0.842945      |
+| Ridge                 | 0.810935       | 0.704475        | 0.344227     | 0.462475  | 0.649776      |
+| KNN                   | 0.791513       | 0.577924        | 0.436188     | 0.497151  | 0.778599      |
+| DNN                   | 0.819002       | 0.664881        | 0.471733     | 0.551896  | 0.852758      |
+| Ensemble              | 0.820742       | 0.682139        | 0.451915     | 0.543658  | 0.854140      |
+
+### Analysis
+
+1. **Accuracy Score**:
+   - **Best**: Ensemble (0.820742)
+   - **Worst**: Naive Bayes (0.784551)
+   - Accuracy indicates the proportion of total predictions that are correct. The Ensemble model has the highest accuracy, followed closely by XGB and DNN.
+ <img src="output-figures/ac.png" alt="image" width="400" height="300"/>
+2. **Precision Score**:
+   - **Best**: Ridge (0.704475)
+   - **Worst**: Naive Bayes (0.550113)
+   - Precision measures the proportion of true positives out of all positive predictions. Ridge model has the highest precision, meaning it has fewer false positives compared to others.
+      <img src="output-figures/Percision.png" alt="image" width="400" height="300"/>
+
+3. **Recall Score**:
+   - **Best**: Naive Bayes (0.483894)
+   - **Worst**: Ridge (0.344227)
+   - Recall measures the proportion of true positives out of all actual positives. Naive Bayes performs best in this metric, indicating it identifies a higher proportion of actual admissions.
+     <img src="output-figures/recall.png" alt="image" width="400" height="300"/>
+
+4. **F1 Score**:
+   - **Best**: DNN (0.551896)
+   - **Worst**: Ridge (0.462475)
+   - F1 Score is the harmonic mean of precision and recall, providing a balance between the two. The DNN model has the highest F1 score, indicating a good balance between precision and recall.
+       <img src="output-figures/F1.png" alt="image" width="400" height="300"/>
+
+5. **ROC AUC Score**:
+   - **Best**: Ensemble (0.854140)
+   - **Worst**: Ridge (0.649776)
+   - ROC AUC measures the model's ability to distinguish between the positive and negative classes. Ensemble model has the highest ROC AUC, indicating the best overall performance in distinguishing between admitted and non-admitted patients.
+         <img src="output-figures/Roc.png" alt="image" width="400" height="300"/>
+
+### Conclusion
+
+- The **Ensemble** model generally performs best across most metrics, including accuracy and ROC AUC, suggesting it is the most reliable for this classification task.
+- **XGB** and **DNN** also show strong performance, with high accuracy, F1 scores, and ROC AUC, making them good alternatives.
+- **Ridge** excels in precision but has the lowest recall and F1 score, indicating it may be too conservative in predicting admissions.
+- **Naive Bayes** has the highest recall but suffers in other metrics, suggesting it is better at identifying admissions but at the cost of more false positives.
+
+Overall, the Ensemble model offers the best trade-off between the various performance metrics, making it the most suitable choice for predicting patient admissions in this dataset.
+
+
+
+
+
+
+
+
 **Key Observations:**
 1. **Accuracy:** The Ensemble model achieved the highest accuracy score (0.820742), closely followed by XGB (0.819844) and DNN (0.819002).
    
