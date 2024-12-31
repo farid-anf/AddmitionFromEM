@@ -90,53 +90,47 @@ We also used XGboost and Random Forrest to see which features are important.
 
 
 
-We provide a comparison of performance metrics for different classification models used on the same dataset. The models compared include Logistic Regression, XGBClassifier, RandomForestClassifier, Deep Neural Network (DNN), and an Ensemble Model (Voting Classifier) of all the previous models. The metrics compared are Accuracy, Precision, Recall, F1 Score, and AUC-ROC.
+### **Summary of the models and their performance**
 
-#### Key Observations:
+The results from testing different models for anticipating admissions from the Emergency Department are summarized below. The models tested include
+- **Logistic Regression (logreg)**,
+- **XGBoost (XGB)**,
+- **Naive Bayes (nb)**,
+- **Random Forest (rf)**,
+- **Ridge (rdg)**,
+- **K-Nearest Neighbors (KNN)**,
+- **Deep Neural Network (DNN)**, and
+- **An ensemble model of Random Forest, XGBoost, and Deep Neural Network**.
 
-![Example Image](output-figures/acu.png)
+The performance of each model is evaluated using the following metrics: 
+- **accuracy score**,
+- **precision score**,
+- **recall score**,
+- **F1 score**, and
+- **ROC AUC score**.
 
-1. **Accuracy**:
-   - The Ensemble Model (Voting Classifier) has the highest accuracy at 0.8213.
-   - The Deep Neural Network (DNN) closely follows with an accuracy of 0.8208.
-   - Logistic Regression has the lowest accuracy at 0.8153.
+**Key Observations:**
+1. **Accuracy:** The Ensemble model achieved the highest accuracy score (0.820742), closely followed by XGB (0.819844) and DNN (0.819002).
+2. **Precision:** Ridge model showed the highest precision score (0.704475), indicating that when it predicted a disposition, it was correct 70.45% of the time.
+3. **Recall:** XGB achieved the highest recall score (0.459982), which means it was able to identify 45.99% of the actual positive cases.
+4. **F1 Score:** The DNN model had the highest F1 score (0.551896), indicating a good balance between precision and recall.
+5. **ROC AUC Score:** The Ensemble model had the highest ROC AUC score (0.854140), indicating its superior ability to distinguish between the positive and negative classes.
 
-2. **Precision**:
-   - The DNN achieves the highest precision at 0.6923, indicating it is the best at correctly identifying positive instances among those predicted as positive.
-   - The RandomForestClassifier has the lowest precision at 0.6627.
-  
-     ![Example Image](output-figures/per.png)
-   
-3. **Recall**:
-   - The XGBClassifier has the highest recall at 0.4621, meaning it is the best at identifying all actual positive instances.
-   - Logistic Regression has the lowest recall at 0.4269, indicating it misses more actual positive instances compared to other models.
+**Overall Best Model:** The Ensemble model, with the highest accuracy and ROC AUC scores, appears to be the most effective model for this task. However, the XGB and DNN models also performed well across most metrics.
 
-4. **F1 Score**:
-   - The XGBClassifier has the highest F1 Score at 0.5481, suggesting it has the best balance between precision and recall.
-   - Logistic Regression has the lowest F1 Score at 0.5221.
+### Performance Metrics Table
 
-![Example Image](output-figures/auc.png)
+| Model              | Accuracy Score | Precision Score | Recall Score | F1 Score  | ROC AUC Score |
+|--------------------|----------------|-----------------|--------------|-----------|---------------|
+| Logistic Regression| 0.815383       | 0.671089        | 0.428822     | 0.523274  | 0.842728      |
+| XGB                | 0.819844       | 0.674034        | 0.459982     | 0.546807  | 0.853364      |
+| Naive Bayes        | 0.784551       | 0.550113        | 0.483894     | 0.514883  | 0.797722      |
+| Random Forest      | 0.815935       | 0.663608        | 0.448173     | 0.535018  | 0.842945      |
+| Ridge              | 0.810935       | 0.704475        | 0.344227     | 0.462475  | 0.649776      |
+| KNN                | 0.791513       | 0.577924        | 0.436188     | 0.497151  | 0.778599      |
+| DNN                | 0.819002       | 0.664881        | 0.471733     | 0.551896  | 0.852758      |
+| Ensemble           | 0.820742       | 0.682139        | 0.451915     | 0.543658  | 0.854140      |
 
-5. **AUC-ROC**:
-   - The Ensemble Model (Voting Classifier) has the highest AUC-ROC at 0.8543, indicating the best overall ability to distinguish between positive and negative classes.
-   - Logistic Regression has the lowest AUC-ROC at 0.6812, indicating the poorest performance in distinguishing between classes.
 
-### Conclusions:
 
-- **Ensemble Model (Voting Classifier)**:
-  - This model stands out with the highest AUC-ROC score (0.8543) and high accuracy (0.8213), making it the best overall performer in terms of distinguishing between classes and general prediction accuracy.
-
-- **Deep Neural Network (DNN)**:
-  - The DNN shows strong performance with the highest precision (0.6923) and near-top accuracy (0.8208), indicating it is very effective at correctly predicting positive instances among those it classifies as positive.
-
-- **XGBClassifier**:
-  - This model excels in recall (0.4621) and F1 Score (0.5481), making it particularly effective in identifying positive instances and balancing precision and recall.
-
-- **Logistic Regression**:
-  - While Logistic Regression has the lowest performance across most metrics, it still serves as a useful baseline model with reasonable accuracy (0.8153) and AUC-ROC (0.6812).
-
-- **RandomForestClassifier**:
-  - This model performs moderately well across all metrics but does not lead in any particular area. Its performance is solid but not exceptional compared to the other models.
-
-Overall, the Ensemble Model (Voting Classifier) provides the best overall performance, making it the preferred choice if one aims to maximize both accuracy and the ability to distinguish between classes. The DNN and XGBClassifier also show strong individual performance in precision and recall, respectively, and could be considered depending on the specific needs of precision or recall in a given application.
 
