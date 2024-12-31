@@ -111,10 +111,15 @@ The performance of each model is evaluated using the following metrics:
 
 **Key Observations:**
 1. **Accuracy:** The Ensemble model achieved the highest accuracy score (0.820742), closely followed by XGB (0.819844) and DNN (0.819002).
+   ![Example Image](output-figures/ac.png)
 2. **Precision:** Ridge model showed the highest precision score (0.704475), indicating that when it predicted a disposition, it was correct 70.45% of the time.
+   ![Example Image](output-figures/Percision.png)
 3. **Recall:** XGB achieved the highest recall score (0.459982), which means it was able to identify 45.99% of the actual positive cases.
+   ![Example Image](output-figures/recall.png)
 4. **F1 Score:** The DNN model had the highest F1 score (0.551896), indicating a good balance between precision and recall.
+   ![Example Image](output-figures/F1.png)
 5. **ROC AUC Score:** The Ensemble model had the highest ROC AUC score (0.854140), indicating its superior ability to distinguish between the positive and negative classes.
+   ![Example Image](output-figures/Roc.png)
 
 **Overall Best Model:** The Ensemble model, with the highest accuracy and ROC AUC scores, appears to be the most effective model for this task. However, the XGB and DNN models also performed well across most metrics.
 
