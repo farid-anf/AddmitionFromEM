@@ -138,19 +138,19 @@ The performance of each model is evaluated using the following metrics:
    - **Best**: Naive Bayes (0.483894)
    - **Worst**: Ridge (0.344227)
    - Recall measures the proportion of true positives out of all actual positives. Naive Bayes performs best in this metric, indicating it identifies a higher proportion of actual admissions.
-     <img src="output-figures/recall.png" alt="image" width="400" height="300"/>
+   <img src="output-figures/recall.png" alt="image" width="400" height="300"/>
 
 4. **F1 Score**:
    - **Best**: DNN (0.551896)
    - **Worst**: Ridge (0.462475)
    - F1 Score is the harmonic mean of precision and recall, providing a balance between the two. The DNN model has the highest F1 score, indicating a good balance between precision and recall.
-       <img src="output-figures/F1.png" alt="image" width="400" height="300"/>
+ <img src="output-figures/F1.png" alt="image" width="400" height="300"/>
 
 5. **ROC AUC Score**:
    - **Best**: Ensemble (0.854140)
    - **Worst**: Ridge (0.649776)
    - ROC AUC measures the model's ability to distinguish between the positive and negative classes. Ensemble model has the highest ROC AUC, indicating the best overall performance in distinguishing between admitted and non-admitted patients.
-         <img src="output-figures/Roc.png" alt="image" width="400" height="300"/>
+    <img src="output-figures/Roc.png" alt="image" width="400" height="300"/>
 
 ### Conclusion
 
